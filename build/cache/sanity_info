@@ -1,0 +1,4 @@
+SANITY_VERSION 1
+TMPDIR /home/asaph/w/src/esme-3S10/build/tmp
+SSTATE_DIR /home/asaph/w/src/esme-3S10/build/sstate-cache
+NATIVELSBSTRING ubuntu-22.04

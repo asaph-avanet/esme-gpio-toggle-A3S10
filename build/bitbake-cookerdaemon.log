@@ -1,0 +1,249 @@
+1916 11:00:07.870275 --- Starting bitbake server pid 1916 at 2025-11-12 11:00:07.870246 ---
+1916 11:00:07.871640 Started bitbake server pid 1916
+1916 11:00:07.871849 Entering server connection loop
+1916 11:00:07.871871 Lockfile is: /home/asaph/w/src/esme-3S10/build/bitbake.lock
+Socket is /home/asaph/w/src/esme-3S10/build/bitbake.sock (True)
+1916 11:00:07.872647 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+1916 11:00:07.874191 Processing Client
+1916 11:00:07.874227 Connecting Client
+1916 11:00:07.874774 Running command ['setFeatures', [2, 1]]
+1916 11:00:07.874808 Sending reply (None, None)
+1916 11:00:07.874880 Command Completed (socket: True)
+1916 11:00:07.875664 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/asaph/w/src/esme-3S10/build', 'LOGNAME': 'asaph', 'HOME': '/home/asaph', 'BBPATH': '/home/asaph/w/src/esme-3S10/build', 'USER': 'asaph', 'PATH': '/home/asaph/w/src/poky/scripts:/home/asaph/w/src/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/TortoiseGit/bin:/mnt/c/Program Files/WireGuard/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/WindowsPowerShell/Scripts/HP.ClientScriptLibrary:/mnt/c/Users/HL8112/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/HL8112/AppData/Local/Programs/Git/cmd:/mnt/c/Users/HL8112/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/HL8112/.dotnet/tools:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'WSL2_GUI_APPS_ENABLED': '1', 'OE_ADDED_PATHS': '/home/asaph/w/src/poky/scripts:/home/asaph/w/src/poky/bitbake/bin:', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'NAME': 'NPHP5CG40100Y6', 'MOTD_SHOWN': 'update-motd', 'LANG': 'en_US.UTF-8', 'WSL_INTEROP': '/run/WSL/341_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/asaph/w/src/poky/bitbake/lib:/home/asaph/w/src/poky/bitbake/lib:/home/asaph/w/src/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': ':0', 'SHLVL': '1', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': '', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/asaph/w/src/esme-3S10/build', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/asaph/w/src/esme-3S10', '_': '/home/asaph/w/src/poky/bitbake/bin/bitbake-layers'}, ['/home/asaph/w/src/poky/bitbake/bin/bitbake-layers', 'add-layer', '../../meta-raspberrypi']]
+1916 11:00:09.039381 Base config valid
+1916 11:00:09.109536 Sending reply (None, None)
+1916 11:00:09.109857 Command Completed (socket: True)
+1916 11:00:09.110569 Running command ['parseConfiguration']
+1916 11:00:09.112368 Sending reply (None, None)
+1916 11:00:09.112754 Command Completed (socket: True)
+1916 11:00:09.113466 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+1916 11:00:09.114137 Sending reply (None, None)
+1916 11:00:09.114375 Command Completed (socket: True)
+1916 11:00:09.115290 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+1916 11:00:09.115882 Sending reply ('/home/asaph/w/src/poky/meta-poky:/home/asaph/w/src/esme-3S10/build:/home/asaph/w/src/poky/meta:/home/asaph/w/src/poky/meta-yocto-bsp', None)
+1916 11:00:09.116058 Command Completed (socket: True)
+1916 11:00:09.125090 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1916 11:00:09.125193 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   ', None)
+1916 11:00:09.125304 Command Completed (socket: True)
+1916 11:00:09.125760 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1916 11:00:09.125975 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+1916 11:00:09.126075 Command Completed (socket: True)
+1916 11:00:09.128345 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1916 11:00:09.128399 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   ', None)
+1916 11:00:09.128492 Command Completed (socket: True)
+1916 11:00:09.128866 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1916 11:00:09.128929 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+1916 11:00:09.129017 Command Completed (socket: True)
+1916 11:00:09.130325 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1916 11:00:09.130362 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   ', None)
+1916 11:00:09.130447 Command Completed (socket: True)
+1916 11:00:09.130804 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1916 11:00:09.130867 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+1916 11:00:09.130952 Command Completed (socket: True)
+1916 11:00:09.132002 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1916 11:00:09.132040 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   ', None)
+1916 11:00:09.132119 Command Completed (socket: True)
+1916 11:00:09.132436 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1916 11:00:09.132493 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+1916 11:00:09.132570 Command Completed (socket: True)
+1916 11:00:09.133251 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+1916 11:00:09.133301 Sending reply ('/home/asaph/w/src/poky/meta-poky:/home/asaph/w/src/esme-3S10/build:/home/asaph/w/src/poky/meta:/home/asaph/w/src/poky/meta-yocto-bsp', None)
+1916 11:00:09.133380 Command Completed (socket: True)
+1916 11:00:09.134452 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1916 11:00:09.134485 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   ', None)
+1916 11:00:09.134560 Command Completed (socket: True)
+1916 11:00:09.135078 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1916 11:00:09.135188 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+1916 11:00:09.135455 Command Completed (socket: True)
+1916 11:00:09.136436 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1916 11:00:09.136512 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   ', None)
+1916 11:00:09.136657 Command Completed (socket: True)
+1916 11:00:09.137278 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1916 11:00:09.137372 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+1916 11:00:09.137499 Command Completed (socket: True)
+1916 11:00:09.140385 Running command ['revalidateCaches']
+1916 11:00:09.140755 Found /home/asaph/w/src/esme-3S10/build/conf/bblayers.conf changed, invalid cache
+1916 11:00:09.140780 Base config invalidated
+1916 11:00:09.146484 Sending reply (None, None)
+1916 11:00:09.146686 Command Completed (socket: True)
+1916 11:00:09.147206 Running command ['parseConfiguration']
+1916 11:00:09.885237 Base config valid
+1916 11:00:09.888411 Sending reply (None, None)
+1916 11:00:09.888614 Command Completed (socket: True)
+1916 11:00:09.889436 Running command ['clientComplete']
+1916 11:00:09.889583 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7a83dbbefb50>>
+1916 11:00:09.889596 Sending reply (True, None)
+1916 11:00:09.889708 Command Completed (socket: True)
+1916 11:00:09.902167 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7a83dbbefb50>>
+1916 11:00:09.902573 Processing Client
+1916 11:00:09.902817 Disconnecting Client (socket: True)
+1916 11:00:09.903373 No timeout, exiting.
+1916 11:00:10.004205 Exiting (socket: True)
+1916 11:00:10.013544 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/asaph/w/src/esme-3S10/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+1931 11:00:27.316812 --- Starting bitbake server pid 1931 at 2025-11-12 11:00:27.316789 ---
+1931 11:00:27.318158 Started bitbake server pid 1931
+1931 11:00:27.318431 Entering server connection loop
+1931 11:00:27.318461 Lockfile is: /home/asaph/w/src/esme-3S10/build/bitbake.lock
+Socket is /home/asaph/w/src/esme-3S10/build/bitbake.sock (True)
+1931 11:00:27.319524 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+1931 11:00:27.322450 Processing Client
+1931 11:00:27.322512 Connecting Client
+1931 11:00:27.323352 Running command ['setFeatures', [2, 1]]
+1931 11:00:27.323482 Sending reply (None, None)
+1931 11:00:27.323571 Command Completed (socket: True)
+1931 11:00:27.324435 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/asaph/w/src/esme-3S10/build', 'LOGNAME': 'asaph', 'HOME': '/home/asaph', 'BBPATH': '/home/asaph/w/src/esme-3S10/build', 'USER': 'asaph', 'PATH': '/home/asaph/w/src/poky/scripts:/home/asaph/w/src/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/TortoiseGit/bin:/mnt/c/Program Files/WireGuard/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/WindowsPowerShell/Scripts/HP.ClientScriptLibrary:/mnt/c/Users/HL8112/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/HL8112/AppData/Local/Programs/Git/cmd:/mnt/c/Users/HL8112/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/HL8112/.dotnet/tools:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'WSL2_GUI_APPS_ENABLED': '1', 'OE_ADDED_PATHS': '/home/asaph/w/src/poky/scripts:/home/asaph/w/src/poky/bitbake/bin:', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'NAME': 'NPHP5CG40100Y6', 'MOTD_SHOWN': 'update-motd', 'LANG': 'en_US.UTF-8', 'WSL_INTEROP': '/run/WSL/341_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/asaph/w/src/poky/bitbake/lib:/home/asaph/w/src/poky/bitbake/lib:/home/asaph/w/src/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': ':0', 'SHLVL': '1', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': '', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/asaph/w/src/esme-3S10/build', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/asaph/w/src/esme-3S10', '_': '/home/asaph/w/src/poky/bitbake/bin/bitbake-layers'}, ['/home/asaph/w/src/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-esme-images']]
+1931 11:00:28.364707 Base config valid
+1931 11:00:28.388943 Sending reply (None, None)
+1931 11:00:28.389197 Command Completed (socket: True)
+1931 11:00:28.389619 Running command ['parseConfiguration']
+1931 11:00:28.390611 Sending reply (None, None)
+1931 11:00:28.390704 Command Completed (socket: True)
+1931 11:00:28.391291 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+1931 11:00:28.391488 Sending reply (None, None)
+1931 11:00:28.391582 Command Completed (socket: True)
+1931 11:00:28.391936 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+1931 11:00:28.392015 Sending reply ('/home/asaph/w/src/poky/meta-poky:/home/asaph/w/src/esme-3S10/build:/home/asaph/w/src/poky/meta:/home/asaph/w/src/poky/meta-yocto-bsp:/home/asaph/w/src/meta-raspberrypi', None)
+1931 11:00:28.392097 Command Completed (socket: True)
+1931 11:00:28.396607 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1931 11:00:28.396653 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   ', None)
+1931 11:00:28.396726 Command Completed (socket: True)
+1931 11:00:28.397136 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1931 11:00:28.397297 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf'}, None)
+1931 11:00:28.397381 Command Completed (socket: True)
+1931 11:00:28.399179 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1931 11:00:28.399220 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   ', None)
+1931 11:00:28.399354 Command Completed (socket: True)
+1931 11:00:28.399685 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1931 11:00:28.399760 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf'}, None)
+1931 11:00:28.399836 Command Completed (socket: True)
+1931 11:00:28.400797 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1931 11:00:28.400827 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   ', None)
+1931 11:00:28.400903 Command Completed (socket: True)
+1931 11:00:28.401264 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1931 11:00:28.401314 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf'}, None)
+1931 11:00:28.401390 Command Completed (socket: True)
+1931 11:00:28.402509 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1931 11:00:28.402552 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   ', None)
+1931 11:00:28.402628 Command Completed (socket: True)
+1931 11:00:28.402846 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1931 11:00:28.402923 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf'}, None)
+1931 11:00:28.402986 Command Completed (socket: True)
+1931 11:00:28.403931 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+1931 11:00:28.404015 Sending reply ('/home/asaph/w/src/poky/meta-poky:/home/asaph/w/src/esme-3S10/build:/home/asaph/w/src/poky/meta:/home/asaph/w/src/poky/meta-yocto-bsp:/home/asaph/w/src/meta-raspberrypi', None)
+1931 11:00:28.404179 Command Completed (socket: True)
+1931 11:00:28.405508 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1931 11:00:28.405583 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   ', None)
+1931 11:00:28.405678 Command Completed (socket: True)
+1931 11:00:28.405924 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1931 11:00:28.405988 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf'}, None)
+1931 11:00:28.406062 Command Completed (socket: True)
+1931 11:00:28.406673 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1931 11:00:28.406705 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   ', None)
+1931 11:00:28.406777 Command Completed (socket: True)
+1931 11:00:28.407055 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1931 11:00:28.407117 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf'}, None)
+1931 11:00:28.407195 Command Completed (socket: True)
+1931 11:00:28.409385 Running command ['revalidateCaches']
+1931 11:00:28.409716 Found /home/asaph/w/src/esme-3S10/build/conf/bblayers.conf changed, invalid cache
+1931 11:00:28.409729 Base config invalidated
+1931 11:00:28.413652 Sending reply (None, None)
+1931 11:00:28.413767 Command Completed (socket: True)
+1931 11:00:28.414045 Running command ['parseConfiguration']
+1931 11:00:29.126165 Base config valid
+1931 11:00:29.128617 Sending reply (None, None)
+1931 11:00:29.128755 Command Completed (socket: True)
+1931 11:00:29.129558 Running command ['clientComplete']
+1931 11:00:29.129656 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x73557a7e7b50>>
+1931 11:00:29.129666 Sending reply (True, None)
+1931 11:00:29.129746 Command Completed (socket: True)
+1931 11:00:29.159454 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x73557a7e7b50>>
+1931 11:00:29.159858 Processing Client
+1931 11:00:29.160037 Disconnecting Client (socket: True)
+1931 11:00:29.160353 No timeout, exiting.
+1931 11:00:29.260681 Exiting (socket: True)
+1931 11:00:29.267094 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/asaph/w/src/esme-3S10/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+1946 11:00:29.642916 --- Starting bitbake server pid 1946 at 2025-11-12 11:00:29.642890 ---
+1946 11:00:29.643890 Started bitbake server pid 1946
+1946 11:00:29.644078 Entering server connection loop
+1946 11:00:29.644098 Lockfile is: /home/asaph/w/src/esme-3S10/build/bitbake.lock
+Socket is /home/asaph/w/src/esme-3S10/build/bitbake.sock (True)
+1946 11:00:29.644768 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+1946 11:00:29.646488 Processing Client
+1946 11:00:29.646518 Connecting Client
+1946 11:00:29.647030 Running command ['setFeatures', [2, 1]]
+1946 11:00:29.647063 Sending reply (None, None)
+1946 11:00:29.647133 Command Completed (socket: True)
+1946 11:00:29.647774 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/asaph/w/src/esme-3S10/build', 'LOGNAME': 'asaph', 'HOME': '/home/asaph', 'BBPATH': '/home/asaph/w/src/esme-3S10/build', 'USER': 'asaph', 'PATH': '/home/asaph/w/src/poky/scripts:/home/asaph/w/src/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/TortoiseGit/bin:/mnt/c/Program Files/WireGuard/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/WindowsPowerShell/Scripts/HP.ClientScriptLibrary:/mnt/c/Users/HL8112/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/HL8112/AppData/Local/Programs/Git/cmd:/mnt/c/Users/HL8112/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/HL8112/.dotnet/tools:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'WSL2_GUI_APPS_ENABLED': '1', 'OE_ADDED_PATHS': '/home/asaph/w/src/poky/scripts:/home/asaph/w/src/poky/bitbake/bin:', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'NAME': 'NPHP5CG40100Y6', 'MOTD_SHOWN': 'update-motd', 'LANG': 'en_US.UTF-8', 'WSL_INTEROP': '/run/WSL/341_interop', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'WAYLAND_DISPLAY': 'wayland-0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/asaph/w/src/poky/bitbake/lib:/home/asaph/w/src/poky/bitbake/lib:/home/asaph/w/src/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': ':0', 'SHLVL': '1', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'WSLENV': '', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/asaph/w/src/esme-3S10/build', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'OLDPWD': '/home/asaph/w/src/esme-3S10', '_': '/home/asaph/w/src/poky/bitbake/bin/bitbake-layers'}, ['/home/asaph/w/src/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-esme-custom']]
+1946 11:00:30.615399 Base config valid
+1946 11:00:30.633792 Sending reply (None, None)
+1946 11:00:30.634050 Command Completed (socket: True)
+1946 11:00:30.634501 Running command ['parseConfiguration']
+1946 11:00:30.636733 Sending reply (None, None)
+1946 11:00:30.636943 Command Completed (socket: True)
+1946 11:00:30.637578 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+1946 11:00:30.637707 Sending reply (None, None)
+1946 11:00:30.637810 Command Completed (socket: True)
+1946 11:00:30.638376 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+1946 11:00:30.638498 Sending reply ('/home/asaph/w/src/poky/meta-poky:/home/asaph/w/src/esme-3S10/build:/home/asaph/w/src/poky/meta:/home/asaph/w/src/poky/meta-yocto-bsp:/home/asaph/w/src/meta-raspberrypi:/home/asaph/w/src/esme-3S10/meta-esme-images', None)
+1946 11:00:30.638602 Command Completed (socket: True)
+1946 11:00:30.645127 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1946 11:00:30.645248 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   /home/asaph/w/src/esme-3S10/meta-esme-images   ', None)
+1946 11:00:30.645388 Command Completed (socket: True)
+1946 11:00:30.645902 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1946 11:00:30.646061 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf', 'meta-esme-images': '/home/asaph/w/src/esme-3S10/meta-esme-images/conf/layer.conf'}, None)
+1946 11:00:30.646207 Command Completed (socket: True)
+1946 11:00:30.648194 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1946 11:00:30.648249 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   /home/asaph/w/src/esme-3S10/meta-esme-images   ', None)
+1946 11:00:30.648375 Command Completed (socket: True)
+1946 11:00:30.648901 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1946 11:00:30.649042 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf', 'meta-esme-images': '/home/asaph/w/src/esme-3S10/meta-esme-images/conf/layer.conf'}, None)
+1946 11:00:30.649183 Command Completed (socket: True)
+1946 11:00:30.652060 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1946 11:00:30.652340 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   /home/asaph/w/src/esme-3S10/meta-esme-images   ', None)
+1946 11:00:30.652570 Command Completed (socket: True)
+1946 11:00:30.653266 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1946 11:00:30.653395 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf', 'meta-esme-images': '/home/asaph/w/src/esme-3S10/meta-esme-images/conf/layer.conf'}, None)
+1946 11:00:30.653542 Command Completed (socket: True)
+1946 11:00:30.655104 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1946 11:00:30.655158 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   /home/asaph/w/src/esme-3S10/meta-esme-images   ', None)
+1946 11:00:30.655292 Command Completed (socket: True)
+1946 11:00:30.655859 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1946 11:00:30.655979 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf', 'meta-esme-images': '/home/asaph/w/src/esme-3S10/meta-esme-images/conf/layer.conf'}, None)
+1946 11:00:30.656116 Command Completed (socket: True)
+1946 11:00:30.657152 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+1946 11:00:30.657225 Sending reply ('/home/asaph/w/src/poky/meta-poky:/home/asaph/w/src/esme-3S10/build:/home/asaph/w/src/poky/meta:/home/asaph/w/src/poky/meta-yocto-bsp:/home/asaph/w/src/meta-raspberrypi:/home/asaph/w/src/esme-3S10/meta-esme-images', None)
+1946 11:00:30.657353 Command Completed (socket: True)
+1946 11:00:30.659052 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1946 11:00:30.659144 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   /home/asaph/w/src/esme-3S10/meta-esme-images   ', None)
+1946 11:00:30.659264 Command Completed (socket: True)
+1946 11:00:30.659791 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1946 11:00:30.659907 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf', 'meta-esme-images': '/home/asaph/w/src/esme-3S10/meta-esme-images/conf/layer.conf'}, None)
+1946 11:00:30.660039 Command Completed (socket: True)
+1946 11:00:30.660942 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+1946 11:00:30.660989 Sending reply ('   /home/asaph/w/src/poky/meta   /home/asaph/w/src/poky/meta-poky   /home/asaph/w/src/poky/meta-yocto-bsp   /home/asaph/w/src/meta-raspberrypi   /home/asaph/w/src/esme-3S10/meta-esme-images   ', None)
+1946 11:00:30.661101 Command Completed (socket: True)
+1946 11:00:30.661548 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+1946 11:00:30.661631 Sending reply ({'core': '/home/asaph/w/src/poky/meta/conf/layer.conf', 'yocto': '/home/asaph/w/src/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/asaph/w/src/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/home/asaph/w/src/meta-raspberrypi/conf/layer.conf', 'meta-esme-images': '/home/asaph/w/src/esme-3S10/meta-esme-images/conf/layer.conf'}, None)
+1946 11:00:30.661749 Command Completed (socket: True)
+1946 11:00:30.665172 Running command ['revalidateCaches']
+1946 11:00:30.665528 Found /home/asaph/w/src/esme-3S10/build/conf/bblayers.conf changed, invalid cache
+1946 11:00:30.665549 Base config invalidated
+1946 11:00:30.671128 Sending reply (None, None)
+1946 11:00:30.671375 Command Completed (socket: True)
+1946 11:00:30.671885 Running command ['parseConfiguration']
+1946 11:00:31.421743 Base config valid
+1946 11:00:31.424273 Sending reply (None, None)
+1946 11:00:31.424465 Command Completed (socket: True)
+1946 11:00:31.425570 Running command ['clientComplete']
+1946 11:00:31.425683 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7016e09ebb50>>
+1946 11:00:31.425695 Sending reply (True, None)
+1946 11:00:31.425838 Command Completed (socket: True)
+1946 11:00:31.465499 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7016e09ebb50>>
+1946 11:00:31.465871 Processing Client
+1946 11:00:31.466067 Disconnecting Client (socket: True)
+1946 11:00:31.466475 No timeout, exiting.
+1946 11:00:31.567268 Exiting (socket: True)
+1946 11:00:31.575418 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/asaph/w/src/esme-3S10/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>

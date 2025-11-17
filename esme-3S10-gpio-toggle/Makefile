@@ -7,7 +7,8 @@ INSTALL_DIR ?= ./.install
 
 # --- Flags de compilation et de liaison ---
 # Utilise pkg-config pour ajouter les CFLAGS (-I...) et LDLIBS (-L... -l...)
-CFLAGS += $(shell pkg-config --cflags libgpiod)
+# Note : CFLAGS doit être utilisé pour la compilation, CPPFLAGS est plus correct
+CPPFLAGS += $(shell pkg-config --cflags libgpiod)
 LDLIBS += $(shell pkg-config --libs libgpiod)
 
 # --- Cibles principales ---
@@ -18,17 +19,22 @@ all: $(PROG)
 # Règle de liaison explicite (dépend de l'objet)
 # make utilisera les variables implicites (CC, LDFLAGS) et nos LDLIBS
 $(PROG): $(OBJS)
+	$(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@
 
 # Aucune règle de compilation .c.o n'est nécessaire.
-# make utilisera la règle implicite en appliquant nos CFLAGS.
+# make utilisera la règle implicite en appliquant nos CFLAGS/CPPFLAGS.
 
 # Cible d'installation
 install: $(PROG)
-	# Crée l'arborescence de destination
+	# --- Installation du binaire ---
 	@mkdir -p $(INSTALL_DIR)/usr/bin
-	# Installe le binaire avec les droits d'exécution
 	@install -m 0755 $(PROG) $(INSTALL_DIR)/usr/bin
-	@echo "Installé dans $(INSTALL_DIR)/usr/bin"
+	@echo "Installé $(PROG) dans $(INSTALL_DIR)/usr/bin"
+	
+	# --- AJOUT : Installation du script de démarrage ---
+	@mkdir -p $(INSTALL_DIR)/etc/init.d
+	@install -m 0755 esme-gpio26-toggle $(INSTALL_DIR)/etc/init.d/
+	@echo "Installé esme-gpio26-toggle dans $(INSTALL_DIR)/etc/init.d"
 
 # Cible de nettoyage
 clean:

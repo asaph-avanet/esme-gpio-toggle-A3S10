@@ -1,3 +1,0 @@
-WARNING: You are running bitbake under WSLv2, this works properly but you should optimize your VHDX file eventually to avoid running out of storage space
-WARNING: No bb files in default matched BBFILE_PATTERN_meta-esme-images '^/home/asaph/w/src/esme-3S10/meta-esme-images/'
-WARNING: No bb files in default matched BBFILE_PATTERN_meta-esme-custom '^/home/asaph/w/src/esme-3S10/meta-esme-custom/'
